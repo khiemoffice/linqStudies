@@ -1,0 +1,11 @@
+C:\Users\khiem\source\repos\LinqStudies\LinqStudies\bin\Debug\netcoreapp2.0\LinqStudies.deps.json
+C:\Users\khiem\source\repos\LinqStudies\LinqStudies\bin\Debug\netcoreapp2.0\LinqStudies.runtimeconfig.json
+C:\Users\khiem\source\repos\LinqStudies\LinqStudies\bin\Debug\netcoreapp2.0\LinqStudies.runtimeconfig.dev.json
+C:\Users\khiem\source\repos\LinqStudies\LinqStudies\bin\Debug\netcoreapp2.0\LinqStudies.dll
+C:\Users\khiem\source\repos\LinqStudies\LinqStudies\bin\Debug\netcoreapp2.0\LinqStudies.pdb
+C:\Users\khiem\source\repos\LinqStudies\LinqStudies\obj\Debug\netcoreapp2.0\LinqStudies.csprojResolveAssemblyReference.cache
+C:\Users\khiem\source\repos\LinqStudies\LinqStudies\obj\Debug\netcoreapp2.0\LinqStudies.csproj.CoreCompileInputs.cache
+C:\Users\khiem\source\repos\LinqStudies\LinqStudies\obj\Debug\netcoreapp2.0\LinqStudies.AssemblyInfoInputs.cache
+C:\Users\khiem\source\repos\LinqStudies\LinqStudies\obj\Debug\netcoreapp2.0\LinqStudies.AssemblyInfo.cs
+C:\Users\khiem\source\repos\LinqStudies\LinqStudies\obj\Debug\netcoreapp2.0\LinqStudies.dll
+C:\Users\khiem\source\repos\LinqStudies\LinqStudies\obj\Debug\netcoreapp2.0\LinqStudies.pdb
