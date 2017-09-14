@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using LinqStudies.Models;
+using System;
+using Microsoft.EntityFrameworkCore;
 
 namespace TodoApi.Controllers
 {
@@ -13,25 +15,36 @@ namespace TodoApi.Controllers
         public TodoController(TodoContext context)
         {
             _context = context;
-            _context.Database.EnsureCreatedAsync();
+            _context.Database.EnsureCreated();
             if (_context.TodoItems.Count() == 0)
             {
                 _context.TodoItems.Add(new TodoItem { Name = "Item1" });
                 _context.TodoItems.Add(new TodoItem { Name = "Item2" });
                 _context.SaveChanges();
             }
-            if (_context.Employees.Count() == 0)
-            {
-                _context.Employees.Add(new Employee { Name = "Item1" });
-                _context.Employees.Add(new Employee { Name = "Item2" });
-                _context.SaveChanges();
-            }
+            
         }
 
         [HttpGet]
         public List<TodoItem> getAll()
         {
             return _context.TodoItems.ToList();
+        }
+        [HttpGet("prod")]
+        public IActionResult product()
+        {
+            var ord2 = _context.Orders.Include("Products").
+                Where(x => x.OrderId == 2)
+                .SingleOrDefault();
+            return new ObjectResult(ord2);
+        }
+
+        [HttpGet("time")]
+        [ResponseCache(Duration =600)]
+        public IActionResult showTime()
+        {
+
+            return Content(DateTime.Now.ToShortTimeString());
         }
 
         [HttpGet("back")]

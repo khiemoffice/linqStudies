@@ -13,6 +13,13 @@ namespace LinqStudies.Models
 
         }
         public DbSet<TodoItem> TodoItems { get; set; }
-        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
+
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    base.OnModelCreating(modelBuilder);
+        //    modelBuilder.Entity<Employee>().ToTable("Employee");
+        //}
     }
 }

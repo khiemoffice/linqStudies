@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace LinqStudies.Models
 {
-    public class Employee
+    public class Product
     {
-        public int Id { get; set; }
+        public int ProductId { get; set; }
         public string Name { get; set; }
-        public string Description { get; set; }
+        public decimal Price { get; set; }
     }
 }
